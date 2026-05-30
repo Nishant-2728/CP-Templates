@@ -22,7 +22,7 @@ public:
         ll mid=(low+high)/2;
         ll left=query(2*ind+1,low,mid,l,r);
         ll right=query(2*ind+2,mid+1,high,l,r);
-        ll min(left,right);
+        return min(left,right);
     }
     void update(ll ind,ll low,ll high,ll index,ll val){
         if(low==high){
