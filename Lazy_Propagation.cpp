@@ -28,7 +28,7 @@ public:
         return min(left,right);
     }
     void updateRange(ll ind,ll low,ll high,ll l,ll r,ll val){
-        seg[ind]=lazy[ind];
+        seg[ind]+=lazy[ind];
         if(low!=high){
             lazy[2*ind+1]+=lazy[ind];
             lazy[2*ind+2]+=lazy[ind];
